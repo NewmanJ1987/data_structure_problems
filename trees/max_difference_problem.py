@@ -1,3 +1,6 @@
+#NOTE: Probelm from
+# https://practice.geeksforgeeks.org/problems/maximum-difference-between-node-and-its-ancestor/1
+
 def calc_max_diff(node):
     return traverse_tree(node, 0)
 
