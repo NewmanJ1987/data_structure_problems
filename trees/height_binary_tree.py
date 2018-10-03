@@ -18,5 +18,15 @@ def count_leaves(node, count):
     return count
 
 
-def height_binary_tree(root):
-    pass
+def height_binary_tree(node):
+    if node.left:
+        count_left = 1 + height_binary_tree(node.left)
+    if node.right:
+        count_right = 1 + height_binary_tree(node.right)
+    if node.left and not node.right:
+        return count_left
+    if node.right and not node.left:
+        return count_right
+    if node.left and node.right:
+        return max(count_left, count_right)
+    return 0
