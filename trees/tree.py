@@ -15,3 +15,9 @@ class Node:
     @staticmethod
     def print_postorder(root):
         pass
+
+
+class RandomNode(Node):
+    def __init__(self, value, left=None, right=None, rand=None):
+        super(RandomNode, self).__init__(value, left=left, right=right)
+        self.rand = rand
