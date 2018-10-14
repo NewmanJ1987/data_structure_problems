@@ -1,5 +1,5 @@
 import unittest
-from boggle_board_alternative.boggle_board import get_adjacent, solve_boggle
+from boggle_board_problem.boggle_board import get_adjacent, solve_boggle
 
 
 class TestBoggleBoard(unittest.TestCase):

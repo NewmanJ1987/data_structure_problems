@@ -79,9 +79,8 @@ def get_adjacent(coordinate, used, dimension):
         for j in range(2):
             for x, y in operations:
                 to_add = (row + x * i, column + y * j)
-                if is_neighbor(to_add, coordinate) and is_not_processed(to_add, coordinate, adjacenies,
-                                                                        used) and is_within_dimension(dimension,
-                                                                                                      to_add):
+                if is_neighbor(to_add, coordinate) and is_within_dimension(dimension, to_add) and is_not_processed(
+                        to_add, coordinate, adjacenies, used):
                     adjacenies.append(to_add)
 
     return adjacenies
